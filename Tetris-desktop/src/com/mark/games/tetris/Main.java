@@ -10,6 +10,7 @@ public class Main {
 		cfg.useGL20 = false;
 		cfg.width = 350;
 		cfg.height = 490;
+		//testing
 		
 		new LwjglApplication(new Tetris(), cfg);
 	}
