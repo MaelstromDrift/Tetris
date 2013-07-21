@@ -1,0 +1,54 @@
+
+tetris.png
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+ipiece
+  rotate: false
+  xy: 1, 1
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+jpiece
+  rotate: false
+  xy: 38, 1
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+lpiece
+  rotate: false
+  xy: 75, 1
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+opiece
+  rotate: false
+  xy: 112, 1
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+spiece
+  rotate: false
+  xy: 149, 1
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+tpiece
+  rotate: false
+  xy: 186, 1
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
+zpiece
+  rotate: false
+  xy: 223, 1
+  size: 35, 35
+  orig: 35, 35
+  offset: 0, 0
+  index: -1
