@@ -43,176 +43,176 @@ public class Piece {
 		switch(type) {
 		case OPIECE:
 			//up
-			blocks.get(0).add(new Block(new Vector2(position.x - 1,position.y), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x,position.y), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x - 1,position.y - 1), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x,position.y - 1), 35, "BLUE"));
+			blocks.get(0).add(new Block(new Vector2(position.x - 1,position.y), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x,position.y), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x - 1,position.y - 1), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x,position.y - 1), 35));
 			
 			//right
-			blocks.get(1).add(new Block(new Vector2(position.x - 1,position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x,position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x - 1,position.y - 1), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x,position.y - 1), 35, "BLUE"));
+			blocks.get(1).add(new Block(new Vector2(position.x - 1,position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x,position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x - 1,position.y - 1), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x,position.y - 1), 35));
 			
 			//down
-			blocks.get(2).add(new Block(new Vector2(position.x - 1,position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x,position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x - 1,position.y - 1), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x,position.y - 1), 35, "BLUE"));
+			blocks.get(2).add(new Block(new Vector2(position.x - 1,position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x,position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x - 1,position.y - 1), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x,position.y - 1), 35));
 			
 			//left
-			blocks.get(3).add(new Block(new Vector2(position.x - 1,position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x,position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x - 1,position.y - 1), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x,position.y - 1), 35, "BLUE"));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1,position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x,position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1,position.y - 1), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x,position.y - 1), 35));
 			break;
 		case IPIECE:
 			//up
-			blocks.get(0).add(new Block(new Vector2(position.x,position.y), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x,position.y - 1), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x,position.y - 2), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x,position.y - 3), 35, "BLUE"));
+			blocks.get(0).add(new Block(new Vector2(position.x,position.y), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x,position.y - 1), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x,position.y - 2), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x,position.y - 3), 35));
 			
 			//right
-			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x + 2, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x + 1, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
+			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x + 2, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x + 1, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x, position.y), 35));
 			
 			//down
-			blocks.get(2).add(new Block(new Vector2(position.x,position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x,position.y - 1), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x,position.y - 2), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x,position.y - 3), 35, "BLUE"));
+			blocks.get(2).add(new Block(new Vector2(position.x,position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x,position.y - 1), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x,position.y - 2), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x,position.y - 3), 35));
 			
 			//left
-			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x + 2, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x + 1, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x + 2, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x + 1, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35));
 			break;
 		case JPIECE:
 			//up
-			blocks.get(0).add(new Block(new Vector2(position.x - 1, position.y - 2), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x, position.y - 1), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x, position.y - 2), 35, "BLUE"));
+			blocks.get(0).add(new Block(new Vector2(position.x - 1, position.y - 2), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x, position.y - 1), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x, position.y - 2), 35));
 			//right
-			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y + 1), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x + 1, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
+			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y + 1), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x + 1, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y), 35));
 			
 			//down
-			blocks.get(2).add(new Block(new Vector2(position.x, position.y + 1), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x + 1, position.y + 1), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x, position.y - 1), 35, "BLUE"));
+			blocks.get(2).add(new Block(new Vector2(position.x, position.y + 1), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x + 1, position.y + 1), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x, position.y - 1), 35));
 			
 			//left
-			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x + 1, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x + 1, position.y - 1), 35, "BLUE"));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x + 1, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x + 1, position.y - 1), 35));
 			break; 
 		case LPIECE:
 			//up
-			blocks.get(0).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x + 1, position.y -2), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x, position.y - 1), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x , position.y - 2), 35, "BLUE"));
+			blocks.get(0).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x + 1, position.y -2), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x, position.y - 1), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x , position.y - 2), 35));
 			
 			//right
-			blocks.get(1).add(new Block(new Vector2(position.x -1, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x + 1, position.y + 1), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x, position.y ), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x  + 1, position.y), 35, "BLUE"));
+			blocks.get(1).add(new Block(new Vector2(position.x -1, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x + 1, position.y + 1), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x, position.y ), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x  + 1, position.y), 35));
 			
 			//down
-			blocks.get(2).add(new Block(new Vector2(position.x - 1, position.y + 1), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x, position.y + 1), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x , position.y - 1), 35, "BLUE"));
+			blocks.get(2).add(new Block(new Vector2(position.x - 1, position.y + 1), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x, position.y + 1), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x , position.y - 1), 35));
 			
 			//left
-			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x + 1, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y - 1), 35, "BLUE"));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x + 1, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y - 1), 35));
 			break;
 		case ZPIECE:
 			//up
-			blocks.get(0).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x + 1, position.y - 1), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x, position.y - 1), 35, "BLUE"));
+			blocks.get(0).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x + 1, position.y - 1), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x, position.y - 1), 35));
 		
 			//right
-			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x, position.y + 1), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y - 1), 35, "BLUE"));
+			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x, position.y + 1), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y - 1), 35));
 			
 			//down
-			blocks.get(2).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x + 1, position.y - 1), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x, position.y - 1), 35, "BLUE"));
+			blocks.get(2).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x + 1, position.y - 1), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x, position.y - 1), 35));
 			
 			//left
-			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x, position.y + 1), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y - 1), 35, "BLUE"));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x, position.y + 1), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y - 1), 35));
 			break;
 		case SPIECE:
 			//up
-			blocks.get(0).add(new Block(new Vector2(position.x - 1, position.y - 1), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x + 1, position.y), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x, position.y - 1), 35, "BLUE"));
+			blocks.get(0).add(new Block(new Vector2(position.x - 1, position.y - 1), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x + 1, position.y), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x, position.y - 1), 35));
 			
 			//right
-			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y + 1), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x, position.y - 1), 35, "BLUE"));
+			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y + 1), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x, position.y - 1), 35));
 			
 			//down
-			blocks.get(2).add(new Block(new Vector2(position.x - 1, position.y - 1), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x + 1, position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x, position.y - 1), 35, "BLUE"));
+			blocks.get(2).add(new Block(new Vector2(position.x - 1, position.y - 1), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x + 1, position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x, position.y - 1), 35));
 			
 			//left
-			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y + 1), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x, position.y - 1), 35, "BLUE"));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y + 1), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x, position.y - 1), 35));
 			break;
 		case TPIECE:
 			//up
-			blocks.get(0).add(new Block(new Vector2(position.x - 1, position.y - 1), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x + 1, position.y - 1), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(0).add(new Block(new Vector2(position.x,position.y - 1), 35, "BLUE"));
+			blocks.get(0).add(new Block(new Vector2(position.x - 1, position.y - 1), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x + 1, position.y - 1), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(0).add(new Block(new Vector2(position.x,position.y - 1), 35));
 			//right
-			blocks.get(1).add(new Block(new Vector2(position.x, position.y + 1), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x + 1, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(1).add(new Block(new Vector2(position.x,position.y - 1), 35, "BLUE"));
+			blocks.get(1).add(new Block(new Vector2(position.x, position.y + 1), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x + 1, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(1).add(new Block(new Vector2(position.x,position.y - 1), 35));
 			
 			//down
-			blocks.get(2).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x + 1, position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(2).add(new Block(new Vector2(position.x,position.y - 1), 35, "BLUE"));
+			blocks.get(2).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x + 1, position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(2).add(new Block(new Vector2(position.x,position.y - 1), 35));
 			
 			//left
-			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x, position.y + 1), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35, "BLUE"));
-			blocks.get(3).add(new Block(new Vector2(position.x,position.y - 1), 35, "BLUE"));
+			blocks.get(3).add(new Block(new Vector2(position.x - 1, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x, position.y + 1), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x, position.y), 35));
+			blocks.get(3).add(new Block(new Vector2(position.x,position.y - 1), 35));
 			break;			
 		}	
 	}
