@@ -4,10 +4,9 @@ import com.badlogic.gdx.math.Vector2;
 
 public class Grid {
 	Vector2 size;
-	int blockSize;
 	boolean filled[][];
 	
-	public Grid(Vector2 size, int blockSize) {
+	public Grid(Vector2 size) {
 		this.size = size;
 		filled = new boolean[10][15];
 	}
@@ -19,6 +18,11 @@ public class Grid {
 	public void setFilled(int x, int y) {
 		filled[x][y] = true;
 	}
+	
+	public void setEmpty(int x, int y) {
+		filled[x][y] = false;
+	}
+	
 	public boolean rowFilled(int y) {
 		for(int i = 0; i < 10; i++) {
 			if(!filled[i][y]) {
@@ -26,19 +30,5 @@ public class Grid {
 			}
 		}
 		return true;
-	}
-	public void setEmpty(int x, int y) {
-		filled[x][y] = false;
-	}
-	
-	public float getRealX(float x) {
-		return x * blockSize;
-	}
-	
-	public float getRealY(float y) {
-		return y * blockSize;
-	}
-	public Vector2 getGridPos(float x, float y) {
-		return new Vector2(x/blockSize, y/blockSize);
 	}
 }

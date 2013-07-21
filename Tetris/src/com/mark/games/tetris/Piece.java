@@ -11,7 +11,6 @@ public class Piece {
 	int state;
 	
 	int rotState = 0;
-	int linesCleared = 0;
 	
 	final static int UP = 0;
 	final static int RIGHT = 1;
@@ -28,10 +27,7 @@ public class Piece {
 	final static int SPIECE = 4;
 	final static int ZPIECE = 5;
 	final static int IPIECE = 6;
-	World world;
 	public Piece(Vector2 position, int type) {
-		
-		world = Tetris.world;
 		blocks.add(new ArrayList<Block>());
 		blocks.add(new ArrayList<Block>());
 		blocks.add(new ArrayList<Block>());
@@ -220,7 +216,6 @@ public class Piece {
 	public void update() {
 		if(state == PIECE_MOVING) {
 			if(blocks.get(rotState).get(3).position.y == 0 || checkCollision()) {
-				state = PIECE_STOPPED;
 				for(int i = 0; i < blocks.get(rotState).size(); i++) {
 					World.grid.setFilled((int)blocks.get(rotState).get(i).position.x, (int)blocks.get(rotState).get(i).position.y);
 				}
@@ -282,22 +277,14 @@ public class Piece {
 	}
 	
 	public void stopBlock() {
+		state = PIECE_STOPPED;
 		Tetris.world.checkFilled();
 		Tetris.world.newPiece();
-	}
-
-	public boolean checkRCollision() {
-		for(int i = 0; i < 4; i++) {
-			if((int)blocks.get(rotState).get(i).position.x + 1 < 9 && World.grid.isFilled((int)blocks.get(rotState).get(i).position.x + 1, (int)blocks.get(rotState).get(i).position.y)) {
-				return true;
-			} 
-		}
-		return false;
 	}
 	
 	public boolean checkLCollision() {
 		for(int i = 0; i < 4; i++) {
-			if((int)blocks.get(rotState).get(i).position.x - 1 > 0 && World.grid.isFilled((int)blocks.get(rotState).get(i).position.x - 1, (int)blocks.get(rotState).get(i).position.y)) {
+			if(((int)blocks.get(rotState).get(i).position.x - 1 > 0 && World.grid.isFilled((int)blocks.get(rotState).get(i).position.x - 1, (int)blocks.get(rotState).get(i).position.y)) || ((int)blocks.get(rotState).get(i).position.x + 1 < 9 && World.grid.isFilled((int)blocks.get(rotState).get(i).position.x + 1, (int)blocks.get(rotState).get(i).position.y))) {
 				return true;
 			} 
 		}
@@ -322,7 +309,7 @@ public class Piece {
 	public void moveRight() {
 		if(blocks.get(rotState).get(1).position.x < 9) {
 			for(int i = 0; i < 4; i++) {
-				if(blocks.get(rotState).get(i).position.x + 1 <= 9 && !checkRCollision()) {
+				if(blocks.get(rotState).get(i).position.x + 1 <= 9 && !checkLCollision()) {
 					blocks.get(i).get(0).position.x++;
 					blocks.get(i).get(1).position.x++;
 					blocks.get(i).get(2).position.x++;

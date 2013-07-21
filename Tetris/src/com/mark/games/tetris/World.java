@@ -25,7 +25,7 @@ public class World {
 	public World() {
 		ran  = new Random();
 		pieces = new ArrayList<Piece>();
-		grid = new Grid(new Vector2(10, 15), 35);
+		grid = new Grid(new Vector2(10, 15));
 		pieces.add(new Piece(new Vector2(4, 13), ran.nextInt(7)));
 		currentPiece = 0;
 	}
