@@ -17,8 +17,6 @@ public class World {
 	static Random ran;
 	
 	int state = 0;
-	int linesCleared = 0;
-	
 	
 	final static int PLAYING = 0;
 	final static int PAUSED = 1;
@@ -30,7 +28,6 @@ public class World {
 		grid = new Grid(new Vector2(10, 15), 35);
 		pieces.add(new Piece(new Vector2(4, 13), ran.nextInt(7)));
 		currentPiece = 0;
-
 	}
 	
 	public void updatePieces() {
@@ -40,14 +37,11 @@ public class World {
 				
 				for(int i = 0; i < pieces.size(); i++) {
 					pieces.get(i).update();
-					//for(int j = 0; j < pieces.get(i).blocks.get(pieces.get(i).rotState).size(); j++) {
-					//	if(pieces.get(i).blocks.get(pieces.get(i).rotState).get(j).position.y > )
-					//		pieces.get(i).moveDown(linesCleared);
-				//	}
 				}
 			}
 		}
 	}
+	
 	public boolean checkFilled(int y) {
 		for(int i = 0; i < 10; i++) {
 			if(grid.isFilled(i, y)) {
@@ -58,8 +52,8 @@ public class World {
 		}
 		return true;
 	}
+	
 	public void newPiece() {
-		linesCleared = 0;
 		pieces.add(new Piece(new Vector2(4,14), ran.nextInt(7)));
 		currentPiece = pieces.size()-1;	
 	}
@@ -75,19 +69,10 @@ public class World {
 		}
 	}
 	
-	/*public boolean lineFull() {
-		for(int i = 0; i < grid.size.y; i++) {
-			for(int j = 0; j < grid.size.x; j++) {
-				
-			}
-		}
-	}*/
 	public void checkFilled() {
 		for(int y = 0; y < 14; y++) {
 			if(grid.rowFilled(y)) {
 				clearLine(y);
-				linesCleared++;
-				System.out.println("Cleared Line: " + y);
 				y--;
 			}
 		}
@@ -111,18 +96,9 @@ public class World {
 				if(pieces.get(i).blocks.get(pieces.get(i).rotState).get(j).position.y == y && pieces.get(i).state == Piece.PIECE_STOPPED) {
 					grid.setEmpty((int)pieces.get(i).blocks.get(pieces.get(i).rotState).get(j).position.x,(int)pieces.get(i).blocks.get(pieces.get(i).rotState).get(j).position.y);
 					pieces.get(i).blocks.get(pieces.get(i).rotState).remove(j);
-					
 				}
 			}
 		}
 		moveDown(y);
 	}
-	
-	/*public void checkCollisions() {
-		for(int i = 0; i < pieces.size(); i++) {
-			for(int j = 1; j < pieces.size(); i++) {
-				if(pieces.get(i))
-			}
-		}
-	}*/
 }

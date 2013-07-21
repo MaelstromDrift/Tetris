@@ -20,17 +20,12 @@ public class Grid {
 		filled[x][y] = true;
 	}
 	public boolean rowFilled(int y) {
-		int check = 0;
 		for(int i = 0; i < 10; i++) {
-			if(filled[i][y]) {
-				check++;
+			if(!filled[i][y]) {
+				return false;
 			}
 		}
-		if(check == 10) {
-			return true;
-		} else {
-			return false;
-		}
+		return true;
 	}
 	public void setEmpty(int x, int y) {
 		filled[x][y] = false;

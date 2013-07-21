@@ -223,7 +223,6 @@ public class Piece {
 				state = PIECE_STOPPED;
 				for(int i = 0; i < blocks.get(rotState).size(); i++) {
 					World.grid.setFilled((int)blocks.get(rotState).get(i).position.x, (int)blocks.get(rotState).get(i).position.y);
-					//System.out.println((int)blocks.get(rotState).get(i).position.x + "," + (int)blocks.get(rotState).get(i).position.y);
 				}
 				stopBlock();
 
@@ -245,18 +244,7 @@ public class Piece {
 		}
 		return false;
 	}
-	/*public void getPosition() {
-	
-	}*/
-	//public void moveDown(int howFar) {
-	//	for(int j = blocks.get(rotState).size() - 1; j >=0; j--) {
-	//		World.grid.setEmpty((int)blocks.get(rotState).get(j).position.x,(int)blocks.get(rotState).get(j).position.y);
-//			
-	//		World.grid.setFilled((int)blocks.get(rotState).get(j).position.x,(int)blocks.get(rotState).get(j).position.y);
-	//	}	
-//		blocks.get(rotState).get(j).position.y = blocks.get(rotState).get(j).position.y - howFar;
-//	}
-	
+
 	public void rotate() {
 		if(state == PIECE_MOVING) {
 			if(rotState != 3) {
@@ -297,9 +285,7 @@ public class Piece {
 		Tetris.world.checkFilled();
 		Tetris.world.newPiece();
 	}
-	public void setPosition() {
-		
-	}
+
 	public boolean checkRCollision() {
 		for(int i = 0; i < 4; i++) {
 			if((int)blocks.get(rotState).get(i).position.x + 1 < 9 && World.grid.isFilled((int)blocks.get(rotState).get(i).position.x + 1, (int)blocks.get(rotState).get(i).position.y)) {
@@ -308,6 +294,7 @@ public class Piece {
 		}
 		return false;
 	}
+	
 	public boolean checkLCollision() {
 		for(int i = 0; i < 4; i++) {
 			if((int)blocks.get(rotState).get(i).position.x - 1 > 0 && World.grid.isFilled((int)blocks.get(rotState).get(i).position.x - 1, (int)blocks.get(rotState).get(i).position.y)) {
@@ -316,6 +303,7 @@ public class Piece {
 		}
 		return false;
 	}
+	
 	public void moveLeft() {
 		if(blocks.get(rotState).get(0).position.x > 0) {
 			for(int j = 0; j < 4; j++) {
@@ -330,6 +318,7 @@ public class Piece {
 			}
 		}
 	}
+	
 	public void moveRight() {
 		if(blocks.get(rotState).get(1).position.x < 9) {
 			for(int i = 0; i < 4; i++) {

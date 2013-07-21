@@ -20,10 +20,6 @@ public class MyInputProcessor implements InputProcessor {
 		if(keycode == Keys.UP) {
 			Tetris.world.pieces.get(Tetris.world.currentPiece).rotate();
 		}
-		if(keycode == Keys.C) {
-			Tetris.world.clearLine(0);
-			Tetris.world.clearLine(1);
-		}
 		return true;
 	}
 
@@ -76,5 +72,4 @@ public class MyInputProcessor implements InputProcessor {
 		// TODO Auto-generated method stub
 		return false;
 	}
-	
 }
